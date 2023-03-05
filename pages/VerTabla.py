@@ -1,7 +1,7 @@
 from functools import partial
 from PyQt5 import uic
 import pandas as pd
-
+#van a necesitar descargar este modulo panda
 from PyQt5.QtWidgets import QTableWidgetItem, QHeaderView, QTableView, QAbstractItemView,QPushButton
 from PyQt5.QtCore import Qt,QSortFilterProxyModel
 from PyQt5.QtGui import QStandardItemModel,QStandardItem
