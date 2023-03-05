@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>927</width>
+    <height>847</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+ background-color:rgb(255, 253, 225);
+
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,1,0,0">
+   <item>
+    <spacer name="verticalSpacer_9">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>847</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,1,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="bottomMargin">
+        <number>100</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_tabla">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(141, 110, 58);</string>
+         </property>
+         <property name="text">
+          <string>Tabla</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="tablaLabel">
+         <property name="styleSheet">
+          <string notr="true">color: black;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="mensaje">
+         <property name="styleSheet">
+          <string notr="true">color: red;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_acceso">
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;
+color: rgb(141, 110, 58);</string>
+         </property>
+         <property name="text">
+          <string>Columnas</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="bottomMargin">
+        <number>50</number>
+       </property>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,0,0">
+       <item>
+        <spacer name="verticalSpacer_17">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_cancelar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+border-radius: 6px;
+border: 3px solid #95753d;
+background-color: #95753d;
+color: white;
+height: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(116, 91, 47);
+	color: rgb(255, 255, 255);
+	border: 3px solid  rgb(116, 91, 47);
+}
+
+QPushButton:pressed {
+    border-style: inset;
+    background-color: rgb(103, 80, 41);
+	color: rgb(255, 255, 255);
+	border: 3px solid  rgb(103, 80, 41);
+}</string>
+         </property>
+         <property name="text">
+          <string>Cancelar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_confirmar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+border-radius: 6px;
+border: 3px solid #95753d;
+background-color: #95753d;
+color: white;
+height: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(116, 91, 47);
+	color: rgb(255, 255, 255);
+	border: 3px solid  rgb(116, 91, 47);
+}
+
+QPushButton:pressed {
+    border-style: inset;
+    background-color: rgb(103, 80, 41);
+	color: rgb(255, 255, 255);
+	border: 3px solid  rgb(103, 80, 41);
+}</string>
+         </property>
+         <property name="text">
+          <string>Confirmar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_16">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>847</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
